@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="kefTestSuite">
+    <test name="Chrome">
+        <classes>
+            <class name="SignUpNegativeTest"/>
+            <class name="ShopifySignInPositiveTest" />
+            <class name="MobileSignInNegativeTest" />
+            <class name="MobileSignUpPositiveTest" />
+            <class name="ForgotPasswordPositiveTest" />
+            <class name="ForgotPasswordNegativeTest" />
+            <class name="MobileSignUpNegativePasswordComplexityTest" />
+            <class name="ShopifySignUpNegativeTest"></class>
+            <class name="ShopifySignUpPositiveTest"></class>
+            <class name="ShopifySignUpNegativePasswordComplexityTest"></class>
+</classes>
+</test>
+<!--
+<test name="Firefox">
+<parameter name="webBrowser" value="firefox"></parameter>
+<classes>
+   <class name="ShopifySignInPositiveTest" />
+    <class name="MobileSignInNegativeTest" />
+   <class name="SignUpNegativeTest" />
+   <class name="MobileSignUpPositiveTest" />
+   <class name="ForgotPasswordPositiveTest" />
+   <class name="ForgotPasswordNegativeTest" />
+   <class name="SignUpNegativeFullScenarioTest" />
+</classes>
+</test>-->
+<!--
+ <test name="kefTestOnEdge">
+     <parameter name="webBrowser" value="edge"></parameter>
+     <classes>
+         <class name="ShopifySignInPositiveTest" />
+         <class name="MobileSignInNegativeTest" />
+         <class name="SignUpNegativeTest" />
+         <class name="MobileSignUpPositiveTest" />
+         <class name="ForgotPasswordPositiveTest" />
+         <class name="ForgotPasswordNegativeTest" />
+         <class name="SignUpNegativeFullScenarioTest" />
+     </classes>
+ </test>-->
+    <!--
+     <test name="kefTestOnOpera">
+         <parameter name="webBrowser" value="opera"></parameter>
+         <classes>
+             <class name="ShopifySignInPositiveTest" />
+             <class name="MobileSignInNegativeTest" />
+             <class name="SignUpNegativeTest" />
+             <class name="MobileSignUpPositiveTest" />
+             <class name="ForgotPasswordPositiveTest" />
+             <class name="ForgotPasswordNegativeTest" />
+             <class name="SignUpNegativeFullScenarioTest" />
+         </classes>
+     </test>-->
+    <listeners>
+        <listener class-name="utils.AnnotationTransformer"/>
+    </listeners>
+</suite>
